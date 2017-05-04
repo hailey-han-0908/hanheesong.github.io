@@ -7,4 +7,8 @@ tags: [php, video]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1FL-ygHJsL0" frameborder="0" allowfullscreen></iframe>
 
-:shipit:
+`PC version`
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BWqimTdxom8" frameborder="0" allowfullscreen></iframe>
+
+`Mobile version`
