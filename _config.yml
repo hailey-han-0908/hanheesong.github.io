@@ -1,5 +1,5 @@
-title:            개발노트😆
-description:      Describe your website here.
+title:            나의 개발노트
+description:      안녕하세요. 이 사이트는 제 개인 블로그입니다.
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
@@ -9,13 +9,13 @@ url:              https://hanheesong.github.io
 
 # Owner/author information
 owner:
-  name:           희송
-  avatar:         avatar.jpg
-  bio:            "부지런히 공부중"
+  name:           희송👩🏻‍💻
+  avatar:         myavatar.jpg
+  bio:            "부지런히 공부하자"
   email:          gmlthd0908@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
-  facebook:
+  facebook:       https://www.facebook.com/gmlthd0908
   github:
   stackexchange:
   linkedin:
