@@ -1,7 +1,7 @@
 # Menu navigation links
 
 - title: Daily
-  url: /daily-life/
+  url: /daily-life/_posts/
 
 - title: External Link
   url: https://hanheesong.github.io/kindacool/

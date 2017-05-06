@@ -124,7 +124,7 @@ To add additional links in the drop down menu edit `_data/navigation.yml`. Use t
   url: /portfolio/
 
 - title: Made Mistakes
-  url: http://mademistakes.com  
+  url: http://mademistakes.com
 ```
 
 ---
