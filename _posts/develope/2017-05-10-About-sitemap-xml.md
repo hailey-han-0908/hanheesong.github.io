@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sitemap.xml 형식 정의"
+title: Sitemap.xml 형식 정의
 description: "Let's take a look at sitemap.xml!"
 tag: [develope]
 category: develope
@@ -12,6 +12,7 @@ image:
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
+
 ### Sitemap XML 형식
 `Sitemap` 프로토콜 형식은 XML 태그로 구성된다.
 `Sitemap`의 모든 데이터 값은 [엔티티 이스케이프](#escaping)되어야 하며 파일 자체는 UTF-8로 인코딩되어 있어야 한다.
@@ -25,7 +26,7 @@ Sitemap의 조건
 
 example
 :
-  ~~~[html]
+```html
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://hanheesong.github.io/sitemap.xml">
     <url>
@@ -36,7 +37,8 @@ example
     </url>
   </urlset>
   ~~~
----
+```
+
 ### XML 태그 정의
 
 | 속성   | 설명  |
