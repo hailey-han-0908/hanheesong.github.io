@@ -5,7 +5,8 @@ description: "Let's take a look at sitemap.xml!"
 tag: [develope]
 category: develope
 sitemap:
-  changefreq : weekly
+  changefreq: weekly
+  priority: 0.8
 image:
   feature: abstract-10.jpg
   credit: dargadgetz
