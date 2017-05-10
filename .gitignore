@@ -7,12 +7,4 @@ node_modules
 Gemfile.lock
 .sass-cache
 .jekyll-metadata
-_layouts/post-index.html
 
-_includes/google_analytics.html
-
-_includes/google_analytics.html
-
-*.html
-
-_includes/google_analytics.html
