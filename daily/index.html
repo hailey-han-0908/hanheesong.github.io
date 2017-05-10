@@ -1,14 +1,16 @@
 ---
 layout: post-index
-title: Daily
+title: 최근 포스트
+description: "Describe this nonsense."
+tags: [Jekyll, theme, themes, responsive, blog, modern]
+comments: false
 image:
-  feature: abstract-5.jpg
+  feature: abstract-1.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
-comments: false
-modified: 2017-05-05
 ---
-{% for post in category.daily %}
+
+{% for post in paginator.posts %}
 <article class="hentry">
   <header>
     {% if post.image.feature %}
@@ -38,13 +40,3 @@ modified: 2017-05-05
 {% endfor %}
 
 {% include pagination.html %}
-<h1>News</h1>
-
-<ul>
-  {% for daily in site.categories.daily %}
-  <li>
-    <a href="{{site.url}}{{daily.url}}">{{daily.title}}</a>
-    <p>{{daily.meta}}</p>
-  </li>
-  {% endfor %}
-</ul>
