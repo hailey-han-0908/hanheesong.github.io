@@ -17,27 +17,24 @@ image:
 `Sitemap` 프로토콜 형식은 XML 태그로 구성된다.
 `Sitemap`의 모든 데이터 값은 [엔티티 이스케이프](#escaping)되어야 하며 파일 자체는 UTF-8로 인코딩되어 있어야 한다.
 
-Sitemap의 조건
-:
+Sitemap의 조건:
   * 여는 [`<urlset>`](#urlset) 태그로 시작해 닫는 `</urlset>`태그로 종료
   * `<urlset>` 태그 안에 네임스페이스(프로토콜 표준) 지정
   * 각  URL의 [`<url>`](#url) 항목을 상위 XML 태그로 포함
   * 각 `<url>` 상위 태그에 [`<loc>`](#loc) 하위 항목 포함
 
-example
-:
-```html
-    <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://hanheesong.github.io/sitemap.xml">
-    <url>
-      <loc>http://www.example.com/</loc>
-      <lastmod>2017-05-11</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  </urlset>
-  ~~~
-```
+example:
+{% highlight html linenos %}
+{% raw %}<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://hanheesong.github.io/sitemap.xml">
+  <url>
+    <loc>http://www.example.com/</loc>
+    <lastmod>2017-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>{% endraw %}
+{% endhighlight %}
 
 ### XML 태그 정의
 
