@@ -14,13 +14,15 @@ image:
 `Sitemap`의 모든 데이터 값은 [엔티티 이스케이프](#escaping)되어야 하며 파일 자체는 UTF-8로 인코딩되어 있어야 한다.
 
 Sitemap의 조건
-: * 여는 [`<urlset>`](#urlset) 태그로 시작해 닫는 `</urlset>`태그로 종료
+:
+  * 여는 [`<urlset>`](#urlset) 태그로 시작해 닫는 `</urlset>`태그로 종료
   * `<urlset>` 태그 안에 네임스페이스(프로토콜 표준) 지정
   * 각  URL의 [`<url>`](#url) 항목을 상위 XML 태그로 포함
   * 각 `<url>` 상위 태그에 [`<loc>`](#loc) 하위 항목 포함
 
 example
-:   ~~~[html]
+:
+  ~~~[html]
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://hanheesong.github.io/sitemap.xml">
     <url>
@@ -33,6 +35,7 @@ example
   ~~~
 ---
 ### XML 태그 정의
+
 | 속성   | 설명  |
 | ----- | ---- |
 | `<urlset>`<a id="urlset"></a>  | 파일을 캡슐화하고 현재 프로토콜 표준을 참조  |
@@ -41,7 +44,9 @@ example
 | `<lastmod>`|파일을 마지막으로 수정한 날짜|
 | `<changefreq>`| 페이지가 변경되는 빈도|
 | `<priority>`| 해당 사이트의 기타 URL에 대한 특정 URL의 상대적 우선순위
+
 ---
+
 ### 엔티티 이스케이프 <a id="escaping"></a>
 `Sitemap` 파일은 UTF-8로 인코딩해야 한다. 일반적으로 파일을 저장할 때 인코딩을 지정할 수 있다.
 모든 XML 파일과 마찬가지로 모든 데이터 값(URL 포함)은 아래 표에 나와 있는 문자에 대해 엔티티 이스케이프 코드를 사용해야 한다.
