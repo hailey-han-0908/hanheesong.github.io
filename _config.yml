@@ -1,5 +1,5 @@
-title:            나의 개발노트
-description:      안녕하세요. 이 사이트는 제 개인 블로그입니다.
+title: kindacool heesong
+description: hello, stranger!
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
@@ -9,9 +9,9 @@ url: https://hanheesong.github.io
 
 # Owner/author information
 owner:
-  name:           희송👩🏻‍💻
+  name:           heesong👩🏻‍💻
   avatar:         avatar.jpg
-  bio:            "부지런히 공부하자"
+  bio:            "You will never know until you try."
   email:          gmlthd0908@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
