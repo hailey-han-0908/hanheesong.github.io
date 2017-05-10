@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3박 4일 제주도
-description: "3days and 4nights Jeju Island"
+title: 동생들이랑 제주도 2박 3일 여행기 (1)
+description: "2days and 3nights Jeju Island"
 category: daily
 tags: [daily, travel]
 sitemap:
@@ -14,7 +14,7 @@ sitemap:
 	/images/jeju/L1010348.jpg
 	/images/jeju/L1010348.jpg
 {% endcapture %}
-{% include gallery images=images caption="랄라랄라" cols=3 %}
+{% include gallery images=images caption="제주도 가는 중 =3" cols=3 %}
 
 
 ## 대한민국 제19대 대통령 선거에서 더불어민주당 문재인 후보의 당선이 확정됐습니다.
