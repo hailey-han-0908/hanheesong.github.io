@@ -1,11 +1,21 @@
 ---
 layout: post
-title: "한국 대통령 문재인 당선"
-description: "제19대 대통령 선거 결과는 위대한 국민들의 위대한 승리"
+title: 3박 4일 제주도
+description: "3days and 4nights Jeju Island"
 category: daily
-tags: [daily]
+tags: [daily, travel]
+sitemap:
+  changefreq: weekly
+  priority: 0.8
 ---
-![enter image description here](https://gdb.voanews.com/F8E520CE-4C88-4A09-B9AE-AA845449B1D4_cx0_cy8_cw0_w1023_r1_s.jpg)
+
+{% capture images %}
+	/images/L1010348.jpg
+	/images/L1010348.jpg
+	/images/L1010348.jpg
+{% endcapture %}
+{% include gallery images=images caption="랄라랄라" cols=3 %}
+
 
 ## 대한민국 제19대 대통령 선거에서 더불어민주당 문재인 후보의 당선이 확정됐습니다.
 

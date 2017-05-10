@@ -36,6 +36,8 @@ example:
 </urlset>{% endraw %}
 {% endhighlight %}
 
+---
+
 ### XML 태그 정의
 
 | 속성   | 설명  |
