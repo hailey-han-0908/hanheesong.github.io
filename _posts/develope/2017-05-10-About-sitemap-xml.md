@@ -4,6 +4,8 @@ title: "Sitemap.xml 형식 정의"
 description: "Let's take a look at sitemap.xml!"
 tag: [develope]
 category: develope
+sitemap:
+  changefreq : weekly
 image:
   feature: abstract-10.jpg
   credit: dargadgetz
@@ -42,7 +44,13 @@ example
 | `<url>`<a id="url"></a>  | 각 URL 항목의 상위 태그(나머지 태그는 이 태그의 하위 태그)  |
 | `<loc>`<a id="loc"></a>  | 페이지의 URL  |
 | `<lastmod>`|파일을 마지막으로 수정한 날짜|
-| `<changefreq>`| 페이지가 변경되는 빈도|
+| `<changefreq>`| 페이지가 변경되는 빈도 |
+|  | always|
+|  | daily|
+|  | monthly|
+|  | weekly|
+|  | yearly|
+|  | never|
 | `<priority>`| 해당 사이트의 기타 URL에 대한 특정 URL의 상대적 우선순위
 
 ---
