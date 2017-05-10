@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post-index
 title: Daily
 image:
   feature: abstract-5.jpg
@@ -9,7 +9,6 @@ comments: false
 modified: 2017-05-05
 ---
 
-<h1>News</h1>
 
 <ul>
   {% for daily in site.categories.daily %}
@@ -19,3 +18,5 @@ modified: 2017-05-05
   </li>
   {% endfor %}
 </ul>
+
+{% include pagination.html %}
