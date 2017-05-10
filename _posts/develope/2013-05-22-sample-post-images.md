@@ -3,6 +3,7 @@ layout: post
 title: "A Post with Images"
 description: "Examples and code for displaying images in posts."
 tags: [sample post, images, test]
+category: develope
 ---
 
 Here are some examples of what a post with images might look like. If you want to display two or three images

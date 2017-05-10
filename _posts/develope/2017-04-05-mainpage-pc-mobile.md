@@ -3,6 +3,7 @@ layout: post
 title: "메인시안 시연 동영상(PC, Mobile)"
 description: "포트폴리오 첨부 링크"
 tags: [video]
+category: develope
 ---
 
 `PC version`
