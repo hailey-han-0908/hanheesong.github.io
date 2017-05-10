@@ -7,10 +7,6 @@ category: develope
 sitemap:
   changefreq: weekly
   priority: 0.8
-image:
-  feature: abstract-10.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 
 ### Sitemap XML 형식
