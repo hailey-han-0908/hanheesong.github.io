@@ -10,9 +10,9 @@ sitemap:
 ---
 
 {% capture images %}
-	/images/L1010348.jpg
-	/images/L1010348.jpg
-	/images/L1010348.jpg
+	/images/jeju/L1010348.jpg
+	/images/jeju/L1010348.jpg
+	/images/jeju/L1010348.jpg
 {% endcapture %}
 {% include gallery images=images caption="랄라랄라" cols=3 %}
 
