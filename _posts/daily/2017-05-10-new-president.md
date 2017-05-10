@@ -2,6 +2,7 @@
 layout: post
 title: "한국 대통령 문재인 당선"
 description: "제19대 대통령 선거 결과는 위대한 국민들의 위대한 승리"
+category: daily
 tags: [daily]
 ---
 ![enter image description here](https://gdb.voanews.com/F8E520CE-4C88-4A09-B9AE-AA845449B1D4_cx0_cy8_cw0_w1023_r1_s.jpg)
