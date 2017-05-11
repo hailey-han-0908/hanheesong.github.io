@@ -56,6 +56,15 @@ body {
 	position: relative;
 }
 
+.header-title-wrap{
+	width:400px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 60px;
+	background-image: url('/images/label.png');
+	background-size: cover;
+}
+
 .header-title {
 	text-align: center;
 	margin: 30px 0 0;
@@ -237,7 +246,7 @@ body {
 		margin: 4px;
 		color: #fff;
 		border-radius: 3px;
-		background-color: lighten($base-color,50);
+		background-color: rgba(126,0,255,0.7);
 
 		span {
 			float: left;
@@ -250,7 +259,7 @@ body {
 		}
 
 		&:hover {
-			background-color: lighten($base-color,40);
+			background-color: rgba(125,4,216,1);
 		}
 	}
 
