@@ -237,7 +237,7 @@ body {
 		margin: 4px;
 		color: #fff;
 		border-radius: 3px;
-		background-color: rgba(126,0,255,0.7);
+		background-color: lighten($base-color,50);
 
 		span {
 			float: left;
@@ -250,7 +250,7 @@ body {
 		}
 
 		&:hover {
-			background-color: rgba(125,4,216,1);
+			background-color: #000;
 		}
 	}
 
