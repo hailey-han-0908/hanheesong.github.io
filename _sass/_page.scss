@@ -7,6 +7,8 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: $body-color;
+	position: relative;
+	top: 350px;
 }
 
 /*
@@ -463,7 +465,7 @@ header .entry-meta {
 
 		@media #{$large} {
 			max-width: 800px;
-			margin-top: 50px;
+			margin-top: 30px;
 			margin-left: auto;
 			margin-right: auto;
 		}
