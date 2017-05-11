@@ -8,7 +8,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 // Display in IE6-9 and FF3
 // -------------------------
 article,
@@ -46,6 +45,10 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+}
+body {
+  position: relative;
+  top: 350px;
 }
 // Focus states
 a:focus {
