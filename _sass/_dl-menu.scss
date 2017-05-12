@@ -4,8 +4,8 @@
 
 .dl-menuwrapper {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 15px;
+	left: 15px;
 	z-index: 1000;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
@@ -17,8 +17,8 @@
 	@media #{$medium} {
 		position: fixed;
 		max-width: 175px;
-		top: 25px;
-		left: 25px;
+		top: 15px;
+		left: 15px;
 	}
 
 	&.dl-menuopen {
@@ -29,8 +29,7 @@
 	.dl-trigger {
 		top: 0;
 		left: 0;
-		font-size: 33px;
-		color: $comp-color;
+		font-size: 42px;
 
 		position: relative;
 		cursor: pointer;
@@ -39,7 +38,7 @@
 		transition: 0.4s ease-in-out;
 
 		&:hover {
-			opacity: 0.6;
+			color: #222;
 		}
 
 		@media #{$medium} {
@@ -303,4 +302,21 @@ All this is done for any sub-level being entered.
 
 .dl-menuopen li {
 	display: block
+}
+
+section.search form input[type="search"] {
+	float: left;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 0;
+	-webkit-transition: all 0.5s ease-in-out 0.1s;
+	transition: all 0.5s ease-in-out 0.1s;
+
+		@media #{$medium} {
+			font-size: 6rem;
+		}
+
 }

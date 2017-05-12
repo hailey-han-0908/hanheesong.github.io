@@ -15,8 +15,8 @@
     z-index: 999;
  }
   .header.shrink {
-    height: 45px;
-    line-height: 96px;
+    height: 70px;
+    line-height: 125px;
   }
   .header h3
   {
@@ -79,15 +79,14 @@
   input[type="checkbox"]#search + label span {
     float: left;
     position: relative;
-    top: 0;
+    top: -3px;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out 0.1s;
     transition: all 0.5s ease-in-out 0.1s;
-    color: #222;
-    font-size: 33px;
+    font-size: 42px;
   }
   input[type="checkbox"]#search + label span:hover {
-    opacity: 0.6;
+    color: #222;
   }
   input[type="checkbox"]#search + label:hover {
     cursor: pointer;
@@ -139,17 +138,6 @@
   section.search form input {
     font-family: "Telefon Black", Sans-Serif;
     color: #FFFFFF;
-  }
-  section.search form input[type="search"] {
-    float: left;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    font-size: 6rem;
-    font-weight: bold;
-    padding: 0;
-    -webkit-transition: all 0.5s ease-in-out 0.1s;
-    transition: all 0.5s ease-in-out 0.1s;
   }
   section.search form input[type="search"]:focus {
     border-color: white;
@@ -233,6 +221,8 @@ function getCurrentScroll() {
 $(document).ready(function(){
   $('.fa-search').on('click', function(){
     $('.fa-search').toggleClass('fa-times');
+    $('#search-input').val('');
+    $('#results-container li a').text('');
   });
 });
 </script>
