@@ -44,7 +44,7 @@
   .header a img{
     border-radius: 50%;
   }
-  .header.shrink a{
+  .header.shrink .pf_wrapper{
     display: none;
   }
 
@@ -153,10 +153,52 @@
     color: #666;
   }
 
+
+  .pf_wrapper {
+  	position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding-top:0!important;
+    padding-bottom: 0!important;
+  }
+  .pf_wrapper::before {
+  	position: absolute;
+  	top: 0;
+  	left: -75%;
+  	z-index: 2;
+  	display: block;
+  	content: '';
+    opacity: 0.2;
+  	width: 50px;
+  	height: 100%;
+  	background: #fff;
+  	-webkit-transform: skewX(-25deg);
+  	transform: skewX(-25deg);
+  }
+  .pf_wrapper:hover::before {
+  	-webkit-animation: shine 1s;
+  	animation: shine 1s;
+  }
+  @-webkit-keyframes shine {
+  	100% {
+  		left: 125%;
+  	}
+  }
+
+  @keyframes shine {
+  	100% {
+  		left: 125%;
+  	}
+  }
 </style>
 
 <div class="header">
-      <a href="{{site.url}}"><img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt=""></a>
+      <figure class="pf_wrapper">
+        <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="">
+      </figure>
       <h3>{{ site.title }}</h3>
 
 </div><!-- /.entry-header -->
