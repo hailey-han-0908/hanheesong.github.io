@@ -1,5 +1,5 @@
 
-<style type="text/css">
+<style amp-custom>
   .header {
     position: fixed;
     top: 0;
@@ -193,6 +193,10 @@
   		left: 125%;
   	}
   }
+  #results-container {position: absolute;top: 117px;left: -43px;}
+  #results-container li{list-style: none;height: 30px;line-height: 30px;}
+  #results-container li:hover a{color: #000;}
+  #results-container li a{color: #fff;font-size: 1.25em;}
 </style>
 
 <div class="header">
@@ -221,12 +225,6 @@
 </main>
 
 </div>
-<style media="screen">
-  #results-container {position: absolute;top: 117px;left: -43px;}
-  #results-container li{list-style: none;height: 30px;line-height: 30px;}
-  #results-container li:hover a{color: #000;}
-  #results-container li a{color: #fff;font-size: 1.25em;}
-</style>
 <!-- Script pointing to jekyll-search.js -->
 <script src="{{site.baseurl}}/dest/jekyll-search.js" type="text/javascript"></script>
 
