@@ -4,6 +4,8 @@ title: MAC에서 MySQL setup(install) 설치하기
 description: "MySQL setup"
 tags: [mysql]
 category: db
+sitemap:
+  changefreq: daily
 ---
 
 오늘은 `MySQL`을 직접 설치하겠습니다.
