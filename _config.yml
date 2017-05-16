@@ -40,7 +40,7 @@ timezone:    Asia/Seoul
 future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
-ampdir: /_site/amp
+ampdir: /amp
 gems:
   - jekyll-sitemap
   - jekyll-paginate
