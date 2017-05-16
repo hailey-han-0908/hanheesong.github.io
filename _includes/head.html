@@ -34,12 +34,15 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "headline": "{{site.title}}",
-    "url":"{{site.url}}"
-  }
+{
+  "@context" : "http://schema.org",
+  "@type" : "Article",
+  "name" : "heesong",
+  "datePublished" : "{{ page.date }}",
+  "image" : "{{ page.feature }}",
+  "articleSection" : "{{ page.title }}",
+  "articleBody" : "{{ page.content }}"
+}
 </script>
 <style amp-custom>
 </style>
