@@ -6,5 +6,5 @@ gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-paginate"
 gem "jekyll-gist"
-
-gem 'amp-jekyll'
+gem "fastimage"
+gem "amp-jekyll"

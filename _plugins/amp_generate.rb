@@ -7,7 +7,7 @@ module Jekyll
       @dir = dir
       @name = 'index.html'
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'amp.html')
+      self.read_yaml(File.join(base, '_layouts'), 'post.html')
       self.content               = post.content
       self.data['body']          = (Liquid::Template.parse post.content).render site.site_payload
 
