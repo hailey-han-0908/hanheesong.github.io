@@ -2,11 +2,10 @@
 layout: post
 title: Sitemap.xml 형식 정의
 description: "Let's take a look at sitemap.xml!"
-tag: [develope]
+tag: [develope, sitemap]
 category: develope
 sitemap:
-  changefreq: weekly
-  priority: 0.8
+  changefreq: daily
 ---
 
 ### Sitemap XML 형식

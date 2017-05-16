@@ -52,7 +52,7 @@
 		</li>
 
 		{% for ca in site.categories %}
-			<li><a href="{{ ca0]/ }}">{{ ca[0] | capitalize}} ({{ ca[1].size}})</a></li>
+			<li><a href="{{ site.url }}/{{ ca[0] }}/">{{ ca[0] | capitalize}} ({{ ca[1].size}})</a></li>
 		{% endfor %}
 
 		{% for link in site.data.navigation %}
