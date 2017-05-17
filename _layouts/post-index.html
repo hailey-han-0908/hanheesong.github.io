@@ -5,6 +5,17 @@
 <!--[if gt IE 8]><!--> <html class="no-js" amp lang="ko"><!--<![endif]-->
 <head>
 {% include head.html %}
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Article",
+  "name" : "heesong",
+  "datePublished" : "{{ page.date }}",
+  "image" : "{{ page.feature }}",
+  "articleSection" : "{{ page.title }}",
+  "articleBody" : "{{ page.description }}"
+}
+</script>
 </head>
 
 <body id="post-index" {% if page.image.feature %}class="feature"{% endif %}>

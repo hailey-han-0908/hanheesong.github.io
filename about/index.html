@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: about-myself
 comments: false
 modified: 2017-05-05
 ---
@@ -97,7 +97,8 @@ modified: 2017-05-05
   position: relative;
   top: 7px;
   left: 48px;
-  width: 533px;
+  width: 45vw;
+  max-width: 535px;
   padding: 20px;
   text-align: center;
   -webkit-border-radius: 0 5px 5px;
@@ -260,7 +261,7 @@ modified: 2017-05-05
 }
 
 /*##### PORTFOLIO SECTION #####*/
-
+.portfolio{padding: 70px 20px;}
 .portfolio .content {
   text-align: center;
 }
@@ -269,7 +270,6 @@ modified: 2017-05-05
     position: relative;
     margin: auto;
     margin-bottom: 3%;
-    width: 680px;
     height: 450px;
     overflow: hidden;
   }
@@ -321,6 +321,8 @@ modified: 2017-05-05
     text-decoration: underline;
     display: table-cell;
     vertical-align: middle;
+    margin:0;
+    line-height: 225px;
   }
   .portfolio .content .projects .project .project-description {
     width: 100%;
@@ -376,6 +378,18 @@ modified: 2017-05-05
 }
 .footer i {
   color: #e74c3c;
+}
+@media screen and (max-width: 988px) {
+  .experience .content ul li .experience-content{
+    width: 77vw;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .experience .content ul li .experience-content{
+    width: 70vw;
+    max-width: none;
+  }
 }
 </style>
 
