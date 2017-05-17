@@ -14,6 +14,7 @@ AMP는 Accelerated Mobile Pages의 약자로 일반적인 HTML 웹 사이트입�
 단, 마크업시 몇 가지 중요한 규칙이 있습니다.
 (예를 들면, `<img>`는 `<amp-img`로 표기해야하는 것)
 
+이제 구글의 AMP를 이용하여 검색엔진 최적화 사이트를 만들어 보겠습니다.
 
 # AMP 설치하기
 
@@ -62,3 +63,7 @@ gems:
   2. URL에 `#development=1`을 추가한다
   (예:`http//localhost:8000/released.amp.html#development=1`)
   3. 크롬 개발자모드 콘솔을 열고 유효성 검사 오류를 확인한다.
+
+# 결과
+![스크린샷 2017-05-18 오전 5.17.29](http://i.imgur.com/gQ8PXoG.png)
+으엉 오류 4개 있네 ㅠㅠ 
