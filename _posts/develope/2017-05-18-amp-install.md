@@ -4,9 +4,11 @@ title: "AMP 적용하기 - 구글의 검색엔진 최적화 사이트 개발하�
 description: "jekyll 블로그에 AMP 프로젝트 설치하고 적용하기"
 tags: [AMP]
 category: develope
+sitemap:
+  changefreq: daily
 ---
 
-AMP는 Accelerated Mobile Pages의 약자로 뭔가 어렵게 생각되지만 결국 AMP HTML 웹 사이트는 일반적인 HTML 웹 사이트입니다.
+AMP는 Accelerated Mobile Pages의 약자로 일반적인 HTML 웹 사이트입니다.
 
 `AMP` 구축해본 결과 `AMP` 설치없이 간단하게 자바스크립트를 포함한 라이브러리를 추가하는것만으로 네이티브한 app를 구축할 수 있게 해주는 매력있는 플랫폼이며 유연하고 간단하기 때문에 퍼블리셔와 개발자 모두가 참여할 수 있습니다.
 단, 마크업시 몇 가지 중요한 규칙이 있습니다.

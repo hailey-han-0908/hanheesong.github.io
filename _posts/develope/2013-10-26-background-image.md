@@ -6,6 +6,8 @@ tags: [sample post]
 category: develope
 image:
   background: triangular.png
+sitemap:
+  changefreq: daily  
 ---
 
 Here be a sample post with a custom background image. To utilize this "feature" just add the following YAML to a post's front matter.
