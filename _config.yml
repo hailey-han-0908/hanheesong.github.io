@@ -1,5 +1,5 @@
 title: heesong
-description: hello, stranger!
+description: heesong blog
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
@@ -12,7 +12,7 @@ owner:
   name:           heesong
   avatar:         avatar.jpg
   avatar2:        avatar2.jpg
-  bio:            "You will never know until you try."
+  bio:            ""
   email:          gmlthd0908@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:

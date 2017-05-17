@@ -22,26 +22,26 @@ AMP는 Accelerated Mobile Pages의 약자로 일반적인 HTML 웹 사이트입�
 
 1. _layout폴더에는 [`amp.html`](https://github.com/juusaw/amp-jekyll/blob/master/amp.html)을 만들고, 루트 디렉토리에서 _plugins 폴더를 생성해서 그 폴더 안에 [`amp_generate.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_generate.rb)와 [`amp_filter.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_filter.rb)를 넣는다.
 
-2. `Gemfile` 파일에 추가한 후 터미널을 열어서 `bundler install`을 실행한다.
+2. `Gemfile` 파일에 추가한 후 터미널을 열어서 `bundler install`을 실행합니다.
 ```
 gem "fastimage"
 gem "amp-jekyll"
 ```
-그 다음 _config.yml 파일에 아래 내용을 추가한다.
+그 다음 _config.yml 파일에 아래 내용을 추가합니다.
 ```
 ampdir: /_site/amp
 gems:
   - amp-jekyll
 ```
 
-3. 자신이 가지고 있는 `head`와 관련있는 html 문서에다가 추가한다. ([]=>{})
+3. 자신이 가지고 있는 `head`와 관련있는 html 문서에다가 추가합니다. ([]=>{})
 ```html
 [% if page.path contains '_posts' %]
 	<link rel="amphtml" href="[[ page.id | prepend: '/YOURDIR' | prepend: site.baseurl | prepend: site.url ]]">
 [% endif %]
 ```
 
-4. 터미널을 열고 `gem install amp-jekyll`을 입력해 설치하면 `AMP` 기본적인 세팅이 끝난다.
+4. 터미널을 열고 `gem install amp-jekyll`을 입력해 설치하면 `AMP` 기본적인 세팅이 끝납니다.
 
 # AMP HTML 필수 마크업
 
@@ -57,13 +57,13 @@ gems:
 
 # 미리보기 및 유효성 검사
 
-  빌드 단계나 사전 처리 필요없이 다른 정적 HTML 사이트를 미리 보는 것처럼 AMP 페이지를 미리 볼 수 있다.
+  빌드 단계나 사전 처리 필요없이 다른 정적 HTML 사이트를 미리 보는 것처럼 AMP 페이지를 미리 볼 수 있습니다.
 
-  1. 브라우저에서 페이지를 연다.
-  2. URL에 `#development=1`을 추가한다
+  1. 브라우저에서 페이지를 엽니다.
+  2. URL에 `#development=1`을 추가합니다.
   (예:`http//localhost:8000/released.amp.html#development=1`)
-  3. 크롬 개발자모드 콘솔을 열고 유효성 검사 오류를 확인한다.
+  3. 크롬 개발자모드 콘솔을 열고 유효성 검사 오류를 확인합니다.
 
 # 결과
 ![스크린샷 2017-05-18 오전 5.17.29](http://i.imgur.com/gQ8PXoG.png)
-으엉 오류 4개 있네 ㅠㅠ 
+으엉 오류 4개 있네 ㅠㅠ
