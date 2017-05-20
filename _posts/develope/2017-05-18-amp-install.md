@@ -20,7 +20,7 @@ AMP는 Accelerated Mobile Pages의 약자로 일반적인 HTML 웹 사이트입�
 
 ⚡️[juusaw](http://)님의 github 파일 참고⚡️
 
-1. _layout폴더에는 [`amp.html`](https://github.com/juusaw/amp-jekyll/blob/master/amp.html)을 만들고, 루트 디렉토리에서 _plugins 폴더를 생성해서 그 폴더 안에 [`amp_generate.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_generate.rb)와 [`amp_filter.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_filter.rb)를 넣는다.
+1. _layout폴더에는 [`amp.html`](https://github.com/juusaw/amp-jekyll/blob/master/amp.html)을 만들고, 루트 디렉토리에서 _plugins 폴더를 생성해서 그 폴더 안에 [`amp_generate.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_generate.rb)와 [`amp_filter.rb`](https://github.com/juusaw/amp-jekyll/blob/master/lib/jekyll/amp_filter.rb)를 넣습니다.
 
 2. `Gemfile` 파일에 추가한 후 터미널을 열어서 `bundler install`을 실행합니다.
 ```
@@ -66,4 +66,3 @@ gems:
 
 # 결과
 ![스크린샷 2017-05-18 오전 5.17.29](http://i.imgur.com/gQ8PXoG.png)
-으엉 오류 4개 있네 ㅠㅠ

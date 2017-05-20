@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>{{ site.title }}</title>
+<title>{{ site.title }}-{% if page.title %}{{page.title}}{% endif %}</title>
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
 
@@ -90,6 +90,7 @@
   .header.shrink {
     height: 70px;
     line-height: 125px;
+    display: none;
   }
   .header h3
   {
