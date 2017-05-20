@@ -8,8 +8,9 @@ sitemap:
   changefreq: daily
 ---
 
-# 💁🏻
+# 💁🏻 들어가기
 자바스크립트 this에 대해 알아보좌ㅏㅏㅏ
+
 
 # 목차
 - this? this!
@@ -162,4 +163,88 @@ var numbers = {
 };
 numbers.sum(); // NaN (엄격모드였다면 TypeError)
 ```
-`numbers.sum()`은 객체 내의 **메소드**를 실행하는 것이므로 `sum메소드`내의 문맥ㅇ은 `var numbers`객체이다.  그리고, `calculate()`함수는 sum 내부에 정의되어 있다. 여기서 <p class="highlight err">'calculate()함수 스코프 안에 있는 this도 numbers객체를 상속받았겠지?!'</p>하고 <u>착각</u>하는 경우가 많다.
+`numbers.sum()`은 객체 내의 **메소드**를 실행하는 것이므로 `sum메소드`내의 문맥ㅇ은 `var numbers`객체이다.  그리고, `calculate()`함수는 sum 내부에 정의되어 있다. 여기서 'calculate()함수 스코프 안에 있는 this도 numbers객체를 상속받았겠지?!'하고 <u>착각</u>하는 경우가 많다.
+그러나, **`calculate()`함수는 메소드가 아니기 때문에 그렇기 때문에 전역변수가 `window`가 되는 것**이다(엄격모드였다면 undefined).
+결과적으로 `calculate()`함수는 제대로 실행되지 않았기 때문에 15라는 값이 나오지 않았다.
+
+## 🤷🏻‍ 엥? 헐! 그렇다면 어떻게 해야지 함수도 메소드와 동일한 context가 될 수 있을까?
+해결책 중 하나는 바로 `.call`메소드를 사용하는 것이다.s
+`calculate()`함수에 `.call`메소드를 사용하면 nmuberA와 numberB 속성에 접근할 수 있다.
+```javascript
+var numbers = {
+  numberA: 5,
+  numberB: 10,
+  sum: function(){
+    console.log(this === numbers); // => true
+    function calculate(){
+      // this는 window (엄격모드였다면 undefined)
+      console.log(this === numbers); // => true
+      return this.numberA + this.numberB;
+    }
+    🌟return calculate.call(this);🌟 // => 문맥을 수정하기 위해 .call()메소드를 적용
+  }
+};
+numbers.sum(); // => 15
+```
+`calculate.call(this)`를 하게되면 this.numberA + this.numberB는 numbers.numberA + numbers.numberB와 동일하게 되서 결과값을 출력할 수 있다.
+
+# 3. 메소드 실행
+메소드는 객체의 속성으로 있는 함수이다.
+예를 들어
+```javascript
+var myObject = {
+  helloFunction: function() {
+    return 'Hello World!';
+  }
+};
+var message = myObject.helloFunction();
+```
+`.helloFunction()`메소드는 `myObject`의 메소드이다.
+메소드에 접근하기 위해서는 `myObject.helloFunction`과 같은 속성 접근자를 이용하면 된다.
+메소드 실행은 속성 접근자 형태의 표현식이 함수 객체로 계산되면서 실행된다. 이 표현식은 함수와 마찬가지로 {인자1,인자2,...}의 구조이다.
+위의 예제를 해석하면 이렇게 된다 :
+  > myObject라는 객체의 helloFunction이라는 메소드 실행
+
+# 3.1. 메소드 실행에서의 this
+`this`는 메소드 실행에서 메소드를 소유하고 있는 객체이다.
+객체 내에 있는 메소드를 실행할 때, 여기서의 this = 객체 자신이다.
+```javascript
+var calc = {
+  num: 0,
+  increment: function() {
+    console.log(this === calc); // => true
+    this.num += 1; // => num + 1
+    return this.num;
+  }
+};
+calc.increment(); // => 1
+calc.increment(); // => 2
+```
+`calc.increment()`메소드 호출은 `increment()`함수의 문맥(=context)를 calc 객체로 만들어준다. 그래서 this.num은 전역객체인 `calc`를 참조로 num의 속성을 증가시키는 것이 가능하도록 해준다. 자바스크립트 객체는 프로토타입에 있는 메소드를 상속받는다. 상속받은 메소드를 객체 내에서 실행한다면 메소드의 문맥은 객체 자신을 가리키게 된다.
+```javascript
+var myDog = Object.create({
+  sayName: function() {
+    console.log(this === myDog); // => true
+    return this.name;
+  }
+});
+myDog.name = 'Milo';
+myDog.sayName(); // => Milo
+```
+Object.create()는 myDog라는 새로운 객체를 만들고, 프로토타입을 설정한다.
+myDog객체는 sayName이라는 메소드를 상속받는다.
+myDog.sayName()이 실행될 때, myDog가 실행 문맥이다.
+```javascript
+class Planet {
+  constructor(name) {
+    this.name = name;
+  }
+  getName() {
+    console.log(this == earth); // => true
+    return this.name;
+  }
+}
+var earth = new Planet('Earth');
+earth.getName(); // => Earth
+```
+ECMAScript 6의 `class`예약어에서 메소드 실행 문맥은 위와 마찬가지로 인스턴스 자신을 가리킨다.
