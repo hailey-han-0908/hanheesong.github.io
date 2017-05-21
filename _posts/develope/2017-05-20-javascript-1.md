@@ -9,7 +9,7 @@ sitemap:
 ---
 
 # 💁🏻 들어가기
-자바스크립트 this에 대해 알아보좌ㅏㅏㅏ
+자바스크립트 this의 용법에 대해서 알아보겠습니다.
 
 
 # 목차
@@ -127,7 +127,9 @@ execute();
 'use strict'는 최상단에 위치하고, 해당 스코프에 엄격모드를 실행해준다.
 `4~7`라인에 `concat()`도 `use strict`를 상속받아서 엄격모드를 실행한다.
 그리고, `concat('Hello', 'World!')` 실행은 `this`를 undefined로 만든다.
+
 ⚠️스코프마다 엄격모드, 비엄격모드 각 각 가능함.
+
 ```javascript
 function nonStrictSum(a, b) {
   // 비엄격모드 : 전역객체 = window
