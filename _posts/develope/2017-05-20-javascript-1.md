@@ -250,3 +250,29 @@ var earth = new Planet('Earth');
 earth.getName(); // => Earth
 ```
 ECMAScript 6의 `class`예약어에서 메소드 실행 문맥은 위와 마찬가지로 인스턴스 자신을 가리킨다.
+
+# 3.2. 실수:객체로부터 메소드를 분리할 때
+
+객체 내에 있는 메소드는 별도로 변수로 분리할 수 있다.
+이 변수를 통해 메소드를 호출할 때 여기서의 `this`가 메소드가 정의되어있는 객체라고 생각할 수 있으나 사실 객체 밖에 있는 메소드를 호출할 경우 함수 실행을 한 결과와 같다.
+함수실행을 할 경우 `this`는 전역객체인 window를 가르킨다. .bind() 바인딩 함수를 사용해서 문맥을 수정할 경우 메소드를 객체에 포함시킬 수 있다.
+
+```javascript
+function Animal(type, lefg){
+this.type = type;
+this.lefg = legs;
+this.logInfo = function() {
+    console.log(this === myCat);
+    console.log('The ' + this.type + ' has' + this.legs + ' legs');
+  }
+}
+var myCat = new Animal('Cat', 4);
+setTimeout(myCat.logInfo, 1000);
+)
+```
+에러다. 제대로 출력되려면 .bind()메소드를 사용해야 되는 것!
+
+```javascript
+setTimeout(myCat.logInfo.bind(myCat), 1000);
+```
+myCat.logInfo.bind(myCat)은 객체의 메소드가 logInfo라는 새로운 함수로 실행된다. 하지만 바인딩 메소드로 인해서 this가 window가 아니라 myCat을 가르키게 된다.
