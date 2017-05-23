@@ -24,13 +24,6 @@ figure {
 
   img {
     margin-bottom: 10px;
-    transform: translate(0,0);
-    transition-duration: 0.25s;
-
-    &:hover{
-      transform: translate(0, -5px);
-      box-shadow: 0 0 10px rgba($base-color, 0.2);
-    }
   }
 
   a {
@@ -202,3 +195,14 @@ svg:not(:root) {
 .mbottom0{margin-bottom: 0px;}
 .mtop0{margin-top: 0;}
 .block{display: block;}
+
+p {
+  img {
+    transform: translate(0, 0);
+    transition-duration: 0.25s;
+
+    &:hover {
+      transform: translate(0, -5px);
+      box-shadow: 0 0 10px rgba($base-color, 0.2);
+    }
+}
