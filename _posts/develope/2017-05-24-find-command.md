@@ -1,8 +1,8 @@
 ---
 layout: amp
-title: "자주 쓰는 맥 터미널 명령어"
-description: "자주 쓰는 맥 터미널 명령어"
-tag: [ 터미널명령어 ]
+title: "파일/디렉토리 경로검색 find 명령어"
+description: "내가 자주 쓰는 맥 터미널 명령어"
+tag: [ find, 명령어, 터미널, 맥 ]
 category: develope
 sitemap:
   changefreq: daily
