@@ -8,9 +8,6 @@ sitemap:
   changefreq: daily
 ---
 
-오늘은 `MySQL`을 직접 설치하겠습니다.
-이전에 `HOMEBREW`로 쉽고 빠르게 깔았으나 계속적인 오류들로 다시 삭제하고 FM으로 설치해봄.
-
 # 설치하기
 1. [mysql](https://dev.mysql.com/downloads/mysql/)에 들어가서 Mac OS X 10.12 (x86, 64-bit), DMG Archive 버전으로 다운을 받는다. (2017-05-16)
 
