@@ -1,9 +1,11 @@
 <div class="header">
       <figure class="pf_wrapper">
-        <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="">
+        <img class="me" src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="">
       </figure>
       <h3><a href="{{site.url}}">{{ site.title }}</a></h3>
-
+<style media="screen">
+  .header img.me:hover{transform:scale(1.2);}
+</style>
 </div><!-- /.entry-header -->
 
 <div class="container">
