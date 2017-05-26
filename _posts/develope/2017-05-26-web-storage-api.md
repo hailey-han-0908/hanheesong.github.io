@@ -108,3 +108,18 @@ var TotalItme = localStorage.length;
 
 <iframe height='265' scrolling='no' title='WjWwXw' src='//codepen.io/heesong/embed/WjWwXw/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/heesong/pen/WjWwXw/'>WjWwXw</a> by hanheesong (<a href='https://codepen.io/heesong'>@heesong</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+
+## clear()이벤트 사용해보기
+```html
+<p><button onclick="clearText()" type="button">Clear</button></p>
+```
+```javascript
+function clearText(){
+            localStorage.clear();
+            document.getElementById("result").innerHTML = "초기화됨";
+        }
+```
+
+<iframe height='265' scrolling='no' title='WjWwXw' src='//codepen.io/heesong/embed/WjWwXw/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/heesong/pen/WjWwXw/'>WjWwXw</a> by hanheesong (<a href='https://codepen.io/heesong'>@heesong</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
