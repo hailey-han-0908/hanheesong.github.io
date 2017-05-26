@@ -11,7 +11,7 @@ sitemap:
 ## Database
 데이터가 실질적으로 적재되는 테이블들을 분류하는 상위 개념
 
-## SQL
+## MySQL 기본 명령어
 ### 생성
 
 ```sql
@@ -27,11 +27,21 @@ DROP DATABASE `데이터베이스명`;
 ### 열람
 
 ```sql
-SHOW DATABASE;
+SHOW DATABASES;
 ```
 
 ### 선택
 
 ```sql
 USE `데이터베이스명`;
+```
+
+### 테이블 조회
+```sql
+show tables;
+```
+
+### 테이블 구조 확인
+```sql
+desc '테이블명';
 ```
