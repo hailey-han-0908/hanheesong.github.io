@@ -1,5 +1,5 @@
 ---
-layout: apm
+layout: amp
 title: "[PHP] MySQL 함수"
 description: "MySQL 함수 살펴보기"
 tags: [ PHP, mysql, 데이터베이스 ]
