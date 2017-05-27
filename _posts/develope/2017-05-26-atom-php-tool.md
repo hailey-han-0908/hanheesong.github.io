@@ -8,7 +8,7 @@ sitemap:
   changefreq: daily
 ---
 
-## 들어가기
+# 들어가기
 나중에 다시 아톰 세팅할 때 참고하려고 포스팅함.
 
 # [php-server](https://atom.io/packages/php-server)
