@@ -42,7 +42,7 @@ $total_fields = mysql_num_fields($result);
 
 ## mysql_fetch_row()
 [레코드집합](#레코드집합)에서 한 개의 **레코드값** 또는 **필드값**을 읽어오는 함수.
-```sql
+```php
 <?php
   $connect = mysql_connect("localhost", "root", "1234");
   $db_con = mysql_select_db("sample", $connect );
