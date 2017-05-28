@@ -80,10 +80,59 @@ $total_fields = mysql_num_fields($result);
    ?>
 </table>
 ```
+## mysql_fetch_array
+mysql_fetch_row()함수의 확장버전.
+mysql_fetch_row()가 배열의 인덱스로써 필드의 일련번호를 사용했다면 mysql_fetch_array()함수는 $row[필드명]의 형태로 배열의 인덱스에 필드 이름을 직접 사용할 수 있다. 즉, $row[num], $row[name]... 이런식.
+
+## mysql_result
+mysql_fetch_row()나 mysql_fetch_array()나 하나의 레코드 값을 가져올 수 있는 것에 비해서 mysql_result()는 레코드값을 전부 가져올 수 있고, 3번째 인자인 필드의 일련번호 또는 필드명을 모두 사용할 수 있음.
+```php
+<?php
+  $connect = mysql_connect("localhost", "root", "1234");
+  $db_con = mysql_select_db("sample", $connect);
+
+  $sql = "select * from mem";
+  $result = mysql_query($sql, $connect);
+
+  $records = mysql_num_rows($result);
+
+  $fields = mysql_num_fields($result);
+
+ ?>
+
+ <h2> mysql_result() 함수 예제</h2>
+ <table width=800 border=1 cellpadding=10>
+   <tr>
+     <td>번호</td>
+     <td>아이디</td>
+     <td>이름</td>
+     <td>성별</td>
+     <td>우편번호</td>
+     <td>주소</td>
+     <td>전화번호</td>
+     <td>나이</td>
+   </tr>
+   <?php
+    for ($i=0; $i < $records; $i++)
+    {
+        echo "<tr>";
+
+        for ($j=0; $j < $fields; $j++)
+        {
+          $data = mysql_result($result, $i, $j);
+          echo "<td> $data </td>";
+        }
+
+        echo "</tr>";
+    }
+    mysql_close();
+    ?>
+ </table>
+```
 
 
+- **레코드집합** : mysql_query()함수는 select문의 실행 결과로 레코드 집합(Resource ID)를 반환한다.
 
 
 
 <a id="레코드집합"></a>
-- **레코드집합** : mysql_query()함수는 select문의 실행 결과로 레코드 집합(Resource ID)를 반환한다.
