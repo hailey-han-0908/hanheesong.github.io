@@ -49,5 +49,13 @@ function onloadselectableeffect(){
 }
 ```
 `onloadselectableeffect()`함수가 실행되면 `.f-btns li`에 해당하는 엘리먼트가 하나씩 순서대로 매개변수 `i`와 `delaytime`의 시간 간격으로 오버된다.
-그리고 `onloadselectableeffect()` 함수가 종료되면 `selectable()` 함수가 실행되면서 선택이 가능해진다. setTimeout함수는 먼저 `.f-btns li`의 첫번째 엘리먼트를 선택하도록하는 함수. 
+그리고 `onloadselectableeffect()` 함수가 종료되면 `selectable()` 함수가 실행되면서 선택이 가능해진다. setTimeout함수는 먼저 `.f-btns li`의 첫번째 엘리먼트를 선택하도록하는 함수.
 그 후에 `.f-btns li`의 li 갯수만큼 `delaytime`효과와 `fadetime`을 각자 계산해준다.
+
+각 함수를 만든다음에
+```javascript
+$(window).load(function(){
+  onloadselectableeffect();
+});
+```
+를 호출하면 츄루룩 실행댐 
