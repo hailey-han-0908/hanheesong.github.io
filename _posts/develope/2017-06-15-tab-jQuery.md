@@ -8,6 +8,15 @@ sitemap:
   changefreq: daily
 ---
 
+### flow
+a엘리먼트의 onclick 을 이용해 gotab(idx)를 넘김
+gotab함수는 idx로 해당하는 탭의 콘튼츠를 찾아 보여줌.
+
+### 필요변수 : idx, go
+- idx의 타입은 숫자여야함.
+  idx = Number(idx);
+- go는 탭 콘텐츠에서 id값이 tab-1, tab-2, tab-3의 규칙을 갖고 있도록 만들어줘야함.
+  var $go = $tabcontainer.find('[id^="tab-' + idx +'"]');
 
 ```html
 <div class="cont-top">
@@ -52,19 +61,23 @@ var $tabctrls       = $('.f-btns li'),
     $tabitems       = $('.tab-cont');
 
 function gotab(idx) {
-  idx = Number(idx); // 1
-  if ( isNan(idx) || idx<=0 ) idx = 0; //2
-  idx++;
+  idx = Number(idx);  // idx 값을 숫자 타입으로 바꿔서 idx에 저장
+  if ( isNan(idx) || idx<=0 ) idx = 0;  // idx 값을 0으로 세팅
+  idx++;   
 
   var $go          = $tabcontainer.find('[id^=tab-]' + idx + '"]');
 
-  if (idx !== -1) {
+  if (idx !== -1) { //4
     $tabitems.hide();
     $go.show();
   }
 }
 ```
+## isNan()
+`isNan()` 어떤 값이 숫자가 아닌지 여부를 나타내서 부울 값을 반환
+NaN (숫자 아님) 이면 true, 숫자면 false를 반환 !
 
-1 : `Number()`함수는 타입변환 함수로 스트링 -> 숫자로 바꿔줌.
-
-2 : 매개변수로 받은 `idx`가 없거나 `idx`가 0보다 작으면 `idx`를 0으로 초기화시켜줌.
+```javascript
+isNan(100) //false
+isNan('dd') //true
+```
