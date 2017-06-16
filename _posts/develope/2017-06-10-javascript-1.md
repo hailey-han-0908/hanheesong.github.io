@@ -1,6 +1,6 @@
 ---
 layout: amp
-title: "jQuery : selectable()"
+title: "jQuery 선택 효과"
 description: "jqeury selectable() 함수 정리"
 tag: [jquery, javascript]
 category: develope
@@ -58,4 +58,4 @@ $(window).load(function(){
   onloadselectableeffect();
 });
 ```
-를 호출하면 츄루룩 실행댐 
+를 호출하면 츄루룩 실행댐
