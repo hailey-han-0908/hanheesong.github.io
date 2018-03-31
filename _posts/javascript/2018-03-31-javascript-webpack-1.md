@@ -40,3 +40,8 @@ ES5를 기준으로 자바스크립트가 파일단위로 스콥이 쪼개지는
 <script src="library1.js"></script>
 <script src="module3.js"></script>
 ```
+
+
+### 철학
+* 모든것이 모듈이다
+* 너가 필요할 때 로딩한다
