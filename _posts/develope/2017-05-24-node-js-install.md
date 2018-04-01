@@ -1,5 +1,5 @@
 ---
-layout: amp
+layout: post
 title: "[맥]Homebrew로 Node.js 설치하기(재설치)"
 description: "Nodejs-Mac(OSX)에 nodejs를 설치하는 최고의 방법"
 tag: [ 설치, Node.js, Homebrew, 맥 ]
