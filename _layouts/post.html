@@ -8,21 +8,6 @@
 </head>
 
 <body id="post" {% if page.image.feature %}class="feature"{% endif %}>
-  <amp-analytics type="googleanalytics">
-  <script type="application/json">
-  {
-    "vars": {
-      "account": "UA-98924140-1"
-    },
-    "triggers": {
-      "trackPageview": {
-        "on": "visible",
-        "request": "pageview"
-      }
-    }
-  }
-  </script>
-  </amp-analytics>
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 {% include header.html %}
