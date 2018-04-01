@@ -1,5 +1,5 @@
 ---
-layout: amp
+layout: post
 title: "CSS파일을 PHP로 압축하기"
 description: "CSS파일을 PHP로 압축하기"
 tag: [CSS, PHP]
