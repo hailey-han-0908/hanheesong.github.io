@@ -37,10 +37,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-
-<!-- Google AD -->
+<!-- Google ad -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -49,15 +46,15 @@
   });
 </script>
 
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-
-<!-- Webfonts
+<!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
 <meta http-equiv="cleartype" content="on">
--->
-<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
@@ -76,21 +73,19 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
 
-<!--
+
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
-<style amp-boilerplate>body {background-image:url({{ background }});}</style>
+<style amp-custom>body {background-image:url({{ background }});}</style>
 {% endif %}
--->
-<style amp-boilerplate>
+<style amp-custom>
 .header {position: fixed;top: 0;width: 100%;height: 315px;background-color: #e8e8e8;overflow: hidden;-webkit-transition: height 0.3s;-moz-transition: height 0.3s;transition: height 0.3s;text-align: center;line-height: 160px;z-index: 999;}
 .header.shrink {height: 70px;line-height: 125px;}
 .header h3{display: inline;font-size: 50px;font-family: 'La Belle Aurore',cursive;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;position: relative;top: -31px;}
 .header a img{border-radius: 50%;}
 .header.shrink .pf_wrapper{display: none;}
 .header.shrink h3{font-size:30px;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
-.header img.me:hover{transform:scale(1.2);}
 .dl-menuwrapper{-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;}
 .main {position: fixed;max-width: 100%;width: 991px;margin: auto;z-index: 999;}
 input[type="checkbox"]#search + label {display: inline-block;margin: 15px;position:fixed;top: 0;right: 0;z-index: 9999;}
