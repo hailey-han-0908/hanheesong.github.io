@@ -79,9 +79,9 @@
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
-<style>body {background-image:url({{ background }});}</style>
+<style amp-boilerplate>body {background-image:url({{ background }});}</style>
 {% endif %}
-<style>
+<style amp-boilerplate>
 .header {position: fixed;top: 0;width: 100%;height: 315px;background-color: #e8e8e8;overflow: hidden;-webkit-transition: height 0.3s;-moz-transition: height 0.3s;transition: height 0.3s;text-align: center;line-height: 160px;z-index: 999;}
 .header.shrink {height: 70px;line-height: 125px;}
 .header h3{display: inline;font-size: 50px;font-family: 'La Belle Aurore',cursive;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;position: relative;top: -31px;}
