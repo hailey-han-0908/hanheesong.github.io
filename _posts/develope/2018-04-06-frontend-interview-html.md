@@ -18,11 +18,10 @@ HTML : 스스로 닫히는 태그
 XHTML : 열리고 닫히는 태그
 
 ```HTML
-<!--XHTML-->
-<img src="../img.png" alt="이미지" />
 
-<!--HTML-->
-<img src="../img.png" alt="이미지">
+<img src="../img.png" alt="이미지" /> //=> XHTML
+
+<img src="../img.png" alt="이미지"> //=> HTML
 ```
 
 ### 여러 언어로 된 콘텐츠 페이지를 어떻게 제공합니까?
