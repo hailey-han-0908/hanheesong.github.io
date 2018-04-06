@@ -3,7 +3,7 @@ layout: post
 title: "프론트 엔드 인터뷰 HTML 편"
 description: "프론트 엔드 인터뷰 HTML에 대한 질문에 대한 답변. (제 생각이니 틀릴 수 있음 주의!)"
 tag: [interview, html, frontend]
-category: javascript
+category: develope
 sitemap:
   changefreq: daily
 ---
