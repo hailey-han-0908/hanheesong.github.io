@@ -3,16 +3,8 @@
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98924140-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-98924140-1');
-</script>
-
+<!--google analytics-->
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
@@ -54,6 +46,12 @@
   });
 </script>
 
+<!-- amp script -->
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 <!-- Webfonts -->
@@ -82,9 +80,9 @@
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/images/{{ background }}{% endcapture %}{% endunless %}
-<style>body {background-image:url({{ background }});}</style>
+<style amp-custom>body {background-image:url({{ background }});}</style>
 {% endif %}
-<style>
+<style amp-custom>
 .header {position: fixed;top: 0;width: 100%;height: 315px;background-color: #e8e8e8;overflow: hidden;-webkit-transition: height 0.3s;-moz-transition: height 0.3s;transition: height 0.3s;text-align: center;line-height: 160px;z-index: 999;}
 .header.shrink {height: 70px;line-height: 125px;}
 .header h3{display: inline;font-size: 50px;font-family: 'La Belle Aurore',cursive;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;position: relative;top: -31px;}
@@ -139,7 +137,6 @@ section.search form input + label {
   padding: 0 12px 0 2px;
   color: #666;
 }
-#post-index #main{position: relative;top:300px;}
 .pf_wrapper {
   position: relative;
   width: 200px;
