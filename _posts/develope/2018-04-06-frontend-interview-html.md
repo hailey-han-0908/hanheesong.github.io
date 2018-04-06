@@ -57,6 +57,7 @@ i18n이란?
 근데, 이 방법은 firefox, opera 및 IE8 이상에서만 지원하기 때문에 두번째 방법을 추천합니다!
 
 두번째는 body요소에 클래스를 사용하는 것.
+(예시)
 ```php
   $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
   <body class="<?php echo $lang; ?>">
@@ -68,8 +69,9 @@ i18n이란?
 구글은 페이지 코드에서 `lang`속성과 같은 언어 식별자 인식을 못함.
 Google에서 언어를 쉽게 식별 할 수 있도록 페이지 당 하나의 언어만 사용하는 것이 좋다.
 
-
 ### data- 속성은 무엇에 좋은가요?
+javascript단에서 action에 대한 설정을 고정 시키지 않고 유연하게 적용할 수 있음.
+
 ### HTML5를 열린 웹 플랫폼으로 생각하십시오. HTML5의 기본 요소는 무엇입니까?
 ### 쿠키와 세션저장소 및 로컬저장소의 차이점은 무엇입니까?
 ### <script>,<script async>,<script defer>의 차이점을 설명하십시오.
