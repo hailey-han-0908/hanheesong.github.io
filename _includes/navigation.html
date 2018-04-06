@@ -50,7 +50,7 @@
 				<li><a href="{{ site.url }}/tags/">All Tags</a></li>
 			</ul>
 		</li>
-
+{% site.categories %}
 		{% for ca in site.categories %}
 			<li><a href="{{ site.url }}/{{ ca[0] }}/">{{ ca[0] | capitalize}} ({{ ca[1].size}})</a></li>
 		{% endfor %}
