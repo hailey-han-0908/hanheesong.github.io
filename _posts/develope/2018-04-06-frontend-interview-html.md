@@ -158,4 +158,21 @@ HTML 파서가 파싱을 멈추고 스크립트 파일을 읽어버리기 때문
 
 ### srcset 이미지 태그에 속성을 사용하는 이유는 무엇입니까? 이 속성의 컨텐츠를 평가할 때 브라우저가 사용하는 프로세스를 설명하세요.
 
-화면 너비에 따라 이미지를 표시하는 데 사용된다. 
+화면 너비에 따라 이미지를 표시하는 데 사용된다.
+
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+      <source media="(min-width: 465px)" srcset="img_white_flowers.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </body>
+</html>
+```
+화면 가로사이즈를 줄이면 pink->white->orange 순으로 사진이 바뀜
