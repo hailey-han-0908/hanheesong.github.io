@@ -78,3 +78,7 @@ example2(1, 'string', true); // '1,string,true'
 ```
 
 #bind 함수의 역할
+
+함수가 가리키는 this만 바꾸고 호출하지 않는 것.
+call과 apply와 비슷하지만 호출 하지 않고
+함수만 반환해줍니다.
