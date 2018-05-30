@@ -304,6 +304,7 @@ modified: 2017-05-05
     position: absolute;
     height: 50%;
     opacity: 0;
+    font-size:15px;
     -webkit-transition: opacity .3s linear;
     transition: opacity .3s linear;
     overflow: hidden;
@@ -566,6 +567,10 @@ modified: 2017-05-05
       <div class="project">
         <style>
         .square-rate{width:100% !important;height:auto !important;}
+        @media screen and(max-width:380px;){
+          .portfolio .content .projects .project .project-description{font-size:3vw;}
+        }
+
         </style>
         <img src="{{site.url}}/images/1x1.gif" class="square-rate">
       <div class="project-image">
@@ -573,18 +578,14 @@ modified: 2017-05-05
       </div>
       <div class="project-title">
         <a href="http://www.ortho.co.kr/"><h2>심플치과</h2></a>
-      </div>
-      <style>
-      .description-list{margin:0;}
-      .description-list li{list-style: none;}
-      </style>
-      <div class="project-description">
-        <ul class="description-list">
-          <li>프로젝트명 : 미시간프라임치과</li>
-          <li>프로젝트 진행일 : 2017.05 - 2017.06</li>
-          <li>소속 회사명 : 디아즈솔루션</li>
-          <li>프로젝트 유형 : 웹 사이트 구축</li>
-        </ul>
+        <div class="project-description">
+          <ul class="description-list">
+            <li>프로젝트명 : 심플치과</li>
+            <li>프로젝트 진행일 : 2018.05 - 2018.06</li>
+            <li>소속 회사명 : 디아즈솔루션</li>
+            <li>프로젝트 유형 : 웹 사이트 구축 및 리뉴얼</li>
+          </ul>
+        </div>
       </div>
     </div>
     </div>
