@@ -382,24 +382,6 @@ modified: 2017-05-05
 .footer i {
   color: #e74c3c;
 }
-@media screen and (max-width: 988px) {
-  .experience .content ul li .experience-content{
-    width: 77vw;
-    max-width: none;
-  }
-}
-@media screen and (max-width: 540px) {
-  .experience .content ul li .experience-content{
-    width: 70vw;
-    max-width: none;
-  }
-  .skills .content .development-wrapper .skills-bar-container li{
-    width: 100%;
-    margin: 0;
-
-  }
-
-}
 </style>
 
 <section class="hero">
@@ -578,6 +560,24 @@ modified: 2017-05-05
       <style>
       .description-list{margin:0;}
       .description-list li{list-style: none;}
+	  @media screen and (max-width: 988px) {
+		  .experience .content ul li .experience-content{
+			width: 77vw;
+			max-width: none;
+		  }
+		}
+		@media screen and (max-width: 540px) {
+		  .experience .content ul li .experience-content{
+			width: 70vw;
+			max-width: none;
+		  }
+		  .skills .content .development-wrapper .skills-bar-container li{
+			width: 100%;
+			margin: 0;
+
+		  }
+
+		}
       </style>
       <div class="project-description">
         <ul class="description-list">
@@ -630,7 +630,7 @@ $(document).ready(function(){
 
     var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight()/2;
 
-    if((bottom_of_window > middle_of_developmentWrapper)&& (developmentIsVisible == false)){
+    if((bottom_of_window > middle_of_developmentWrapper) && (developmentIsVisible == false)){
 
       $('.skills-bar-container li').each( function(){
 
