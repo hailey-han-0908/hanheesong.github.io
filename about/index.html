@@ -333,11 +333,7 @@ modified: 2017-05-05
     padding:3%;
     text-align: left;
   }
-  @media screen and (max-width:380px;){
-  	.portfolio .content .projects .project .project-description {font-size:2vw;}
-
-  }
-
+ 
 /*##### CONTACT SECTION #####*/
 .contact {
   padding: 30px 0;
@@ -546,53 +542,55 @@ modified: 2017-05-05
     </div>
 </section>
 <section class="portfolio">
-  <div class="content">
-    <h1>PORTFOLIO</h1>
-    <div class="projects">
-      <div class="project">
-        <style>
-        .square-rate{width:100% !important;height:auto !important;}
-        </style>
-        <img src="{{site.url}}/images/1x1.gif" class="square-rate">
-      <div class="project-image">
-        <img src="http://www.simpledental.co.kr/img/common/app_image.png">
-      </div>
-      <div class="project-title">
-        <a href="http://www.simpledental.co.kr/"><h2>심플치과</h2></a>
-      </div>
-      <style>
-      .description-list{margin:0;}
-      .description-list li{list-style: none;}
-	  @media screen and (max-width: 988px) {
-		  .experience .content ul li .experience-content{
-			width: 77vw;
-			max-width: none;
-		  }
-		}
-		@media screen and (max-width: 540px) {
-		  .experience .content ul li .experience-content{
-			width: 70vw;
-			max-width: none;
-		  }
-		  .skills .content .development-wrapper .skills-bar-container li{
-			width: 100%;
-			margin: 0;
+	<div class="content">
+		<h1>PORTFOLIO</h1>
+		<div class="projects">
+		  <div class="project">
+			<img src="{{site.url}}/images/1x1.gif" class="square-rate">
+			<div class="project-image">
+				<img src="http://www.simpledental.co.kr/img/common/app_image.png">
+			</div>
+			<div class="project-title">
+				<a href="http://www.simpledental.co.kr/"><h2>심플치과</h2></a>
+			</div>
+			<style>
+			.square-rate{width:100% !important;height:auto !important;}
+			.description-list{margin:0;font-size:15px;}
+			.description-list li{list-style: none;}
+			@media screen and (max-width: 988px) {
+			  .experience .content ul li .experience-content{
+				width: 77vw;
+				max-width: none;
+			  }
+			}
+			@media screen and (max-width: 540px) {
+			  .experience .content ul li .experience-content{
+				width: 70vw;
+				max-width: none;
+			  }
+			  .skills .content .development-wrapper .skills-bar-container li{
+				width: 100%;
+				margin: 0;
 
-		  }
+			  }
 
-		}
-      </style>
-      <div class="project-description">
-        <ul class="description-list">
-          <li>프로젝트명 : 심플치과</li>
-          <li>프로젝트 진행일 : 2018.05 - 2018.06</li>
-          <li>소속 회사명 : 디아즈솔루션</li>
-          <li>프로젝트 유형 : 웹 사이트 구축</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-  </div>
+			}
+			@media screen and (max-width:380px;){
+				.description-list {font-size:2vw;}
+			}
+
+			</style>
+				<div class="project-description">
+					<ul class="description-list">
+						<li>프로젝트명 : 심플치과</li>
+						<li>프로젝트 진행일 : 2018.05 - 2018.06</li>
+						<li>소속 회사명 : 디아즈솔루션</li>
+						<li>프로젝트 유형 : 웹 사이트 구축</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <script type="text/javascript">
 $(document).ready(function(){
