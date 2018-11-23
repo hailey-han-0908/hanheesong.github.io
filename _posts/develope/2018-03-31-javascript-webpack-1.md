@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "웹팩(webpack) 기초 - 1"
-description: "자바스크립트 모듈 번들링 도구 웹팩에 대해 알아보즈아"
+description: "자바스크립트 모듈 번들링 도구 웹팩에 대해 알아보즈아sdfsdfsdfdfs"
 tag: [javascript, webpack]
 category: develope
 sitemap:
